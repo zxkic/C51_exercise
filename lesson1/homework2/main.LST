@@ -1,0 +1,53 @@
+C51 COMPILER V9.01   MAIN                                                                  07/26/2023 22:13:10 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: D:\Keil_C51\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /**
+   2             * @brief     点亮1,3,5,7或2,4,5,6
+   3             * @param
+   4             * @retval
+   5          */
+   6          #include <REGX52.H>
+   7          sbit D1 = P2^0;
+   8          sbit D2 = P2^1;
+   9          sbit D3 = P2^2;
+  10          sbit D4 = P2^3;
+  11          sbit D5 = P2^4;
+  12          sbit D6 = P2^5;
+  13          sbit D7 = P2^6;
+  14          sbit D8 = P2^7;
+  15          
+  16          void main(){
+  17   1              //位操作
+  18   1      //      D1 = 0;
+  19   1      //      D3 = 0;
+  20   1      //      D5 = 0;
+  21   1      //      D7 = 0;
+  22   1      
+  23   1      //      D2 = 0;
+  24   1      //      D4 = 0;
+  25   1      //      D5 = 0;
+  26   1      //      D6 = 0;
+  27   1              //总线操作
+  28   1              //P2 = 0xaa;
+  29   1              P2 = 0xc5;
+  30   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      4    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
